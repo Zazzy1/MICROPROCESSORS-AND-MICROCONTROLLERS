@@ -1,0 +1,8 @@
+Mov r7,#23H
+Mov a, r7                     ; get the content in acc
+Anl a, #F0h                ; mask lower 
+ Mov r6, a                     ; send it to r6
+ Swap a             ; Exchange upper and lower nibbles of acc
+Orl a, r6                       ; OR operation
+ Mov r6, a                     ; finally load content in r6
+END

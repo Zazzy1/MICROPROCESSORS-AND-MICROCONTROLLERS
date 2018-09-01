@@ -1,0 +1,6 @@
+org 0000h
+mov r2,#04H
+mov a,#55h
+add a,r2
+mov r3,a
+end
